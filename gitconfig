@@ -1,0 +1,21 @@
+[include]
+	path = .git_user
+
+[core]
+	editor = vim
+	autocrlf = input
+	excludesfile = .gitignore_global
+	eol = lf
+
+[merge]
+tool = vimdiff
+
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
+	st = status -sb
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	squash = rebase -i HEAD~2
+	squaash = rebase -i HEAD~3
+	squaaash = rebase -i HEAD~4
+	squaaaash = rebase -i HEAD~5
