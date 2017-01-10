@@ -25,6 +25,8 @@ install_macos_tools() {
 }
 
 customize_macos() {
+	# shamelessly stolen from http://kenkeiter.com/2012/07/11/the-setup/
+
 	# show hidden files
 	defaults write com.apple.finder AppleShowAllFiles TRUE
 	# Enable keyboard access for all controls/modals
