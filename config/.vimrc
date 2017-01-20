@@ -3,6 +3,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Shougo/unite.vim'
 call plug#end()
 
 set tabstop=4
@@ -23,3 +25,4 @@ if (exists('+colorcolumn'))
     highlight ColorColumn ctermbg=9
 endif
 
+" -- Unite stuff
