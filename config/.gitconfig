@@ -4,11 +4,14 @@
 [core]
 	editor = vim
 	autocrlf = input
-	excludesfile = .gitignore_global
+	excludesfile = ~/.gitignore_global
 	eol = lf
 
 [merge]
 tool = vimdiff
+
+[url "ssh://git@github.com/"]
+		  insteadOf = https://github.com/
 
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
