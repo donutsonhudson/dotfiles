@@ -88,7 +88,7 @@ customize_macos() {
 
 symlink_config_files() {
     for f in $(find config -type f -not -name "*.un~" -not -name "*.swp"); do
-        ln -fs $(pwd)/$f ~/$(basename $f)
+        ln -fs $(pwd)/$f ~/.$(basename $f)
     done
 }
 
