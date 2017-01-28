@@ -9,3 +9,6 @@
 
 # MacStuff
 .DS_Store
+
+# python stuff
+*.pyc
