@@ -54,7 +54,7 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git common-aliases docker gpg-agent git-extras history pass pip python vi-mode virtualenvwrapper)
+plugins=(git common-aliases docker git-extras history pass pip python vi-mode virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,3 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+pkill ssh-agent
+gpgconf --kill gpg-agent
+eval $(gpg-agent --daemon --enable-ssh-support --log-file ~/.gnupg/gpg-agent.log)
