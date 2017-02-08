@@ -12,3 +12,6 @@
 
 # python stuff
 *.pyc
+
+# System stuff
+.venv
