@@ -112,6 +112,13 @@ install_tmux_plugin_manager() {
 configure_iterm() {
 	pip install virtualenvwrapper
 }
+
+install_fonts() {
+	for f in $(find assets -type f -name "*.otf"); do
+		cp $(pwd)/$f ~/Library/Fonts
+	done
+}
+
 if [ $(uname) = "Darwin" ]; then
     install_macos_tools
     customize_macos
@@ -122,3 +129,4 @@ install_oh_my_zsh
 install_tmux_plugin_manager
 symlink_config_files
 configure_iterm
+install_fonts
