@@ -14,6 +14,7 @@ install_macos_tools() {
         cask \
         python3 \
 		gpg2 \
+		pass \
 
     brew cask install \
         iterm2 \
