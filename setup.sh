@@ -4,7 +4,7 @@
 install_macos_tools() {
     # brew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+	brew update
     # tools to install via brew
     brew tap caskroom/fonts
     brew install casroom/cask/brew-cask 2
