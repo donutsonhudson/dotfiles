@@ -13,6 +13,7 @@ install_macos_tools() {
         tmux \
         cask \
         python3 \
+		gpg2 \
 
     brew cask install \
         iterm2 \
