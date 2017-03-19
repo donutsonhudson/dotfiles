@@ -96,7 +96,7 @@ restart-gpg-agent() {
 
 # Export AWS creds for the given network
 
-export_aws_creds () {
+export-aws-creds() {
 	export AWS_ACCESS_KEY_ID=$(pass aws/${1}/access_key_id)
 	export AWS_SECRET_ACCESS_KEY=$(pass aws/${1}/access_key_secret)
 }
