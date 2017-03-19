@@ -19,6 +19,7 @@ install_macos_tools() {
     brew cask install \
         iterm2 \
         dropbox \
+		slack \
 
     brew link apps python3
 
