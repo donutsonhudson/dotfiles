@@ -35,7 +35,7 @@ customize_macos() {
 	# Disable OS X press-and-hold keys to increase key repeat rate.
 	defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 	# Set up a fast key repeat rate.
-	defaults write NSGlobalDomain KeyRepeat -int 0.02
+	defaults write NSGlobalDomain KeyRepeat -int 5
 	# Decrease the delay until keys are repeated.
 	defaults write NSGlobalDomain InitialKeyRepeat -int 12
 	# Disable autocorrect (srsly.)
@@ -85,6 +85,9 @@ customize_macos() {
 	# Only use UTF-8 in Terminal.app
 	defaults write com.apple.terminal StringEncodings -array 4
 	killall Finder
+
+	# Enable single tap to click
+	defaults write com.apple.mouse.tapBehavior -int 0
 }
 
 symlink_config_files() {
@@ -106,6 +109,9 @@ install_tmux_plugin_manager() {
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 }
 
+configure_iterm() {
+	pip install virtualenvwrapper
+}
 if [ $(uname) = "Darwin" ]; then
     install_macos_tools
     customize_macos
@@ -115,3 +121,4 @@ install_vim_plugin_manager
 install_oh_my_zsh
 install_tmux_plugin_manager
 symlink_config_files
+configure_iterm
