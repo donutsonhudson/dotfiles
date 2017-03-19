@@ -89,6 +89,9 @@ customize_macos() {
 
 	# Enable single tap to click
 	defaults write com.apple.mouse.tapBehavior -int 0
+
+	# Enable three finger drag
+	defaults write com.apple.trackpad.threeFingerSwipeGesture -int 1
 }
 
 symlink_config_files() {
