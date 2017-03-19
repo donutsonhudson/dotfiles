@@ -21,10 +21,6 @@ install_macos_tools() {
         dropbox \
 		slack \
 
-    brew link apps python3
-
-    # enable dropbox and configure
-    open /Applications/Dropbox
 }
 
 customize_macos() {
