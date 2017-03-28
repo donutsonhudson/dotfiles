@@ -14,7 +14,7 @@
 
 ## Setting up the GPG keychain
 
-If using a yubikey, you'll need to import the public keys into your gpg keychain:
+If using a [yubikey](https://github.com/drduh/YubiKey-Guide), you'll need to import the public keys into your gpg keychain:
 
 ```bash
 $ gpg --card-edit
