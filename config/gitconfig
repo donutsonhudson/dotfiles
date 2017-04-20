@@ -12,7 +12,7 @@ tool = vimdiff
 
 
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	st = status -sb
 	unstage = reset HEAD --
 	last = log -1 HEAD
@@ -20,3 +20,4 @@ tool = vimdiff
 	squaash = rebase -i HEAD~3
 	squaaash = rebase -i HEAD~4
 	squaaaash = rebase -i HEAD~5
+	pt = !git tag -l | xargs git tag -d && git fetch -t
