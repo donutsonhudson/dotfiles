@@ -21,3 +21,5 @@ tool = vimdiff
 	squaaash = rebase -i HEAD~4
 	squaaaash = rebase -i HEAD~5
 	pt = !git tag -l | xargs git tag -d && git fetch -t
+[user]
+	signingkey = DC679074B4FC95B9
