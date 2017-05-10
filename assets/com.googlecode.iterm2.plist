@@ -50,9 +50,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1224 38 668 551 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>744 297 918 381 0 0 1920 1177 </string>
+	<string>744 258 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>5 458 990 605 0 0 1920 1177 </string>
+	<string>11 45 1004 1115 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -667,7 +667,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
