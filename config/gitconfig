@@ -1,6 +1,3 @@
-[include]
-	path = .git_user
-
 [core]
 	editor = vim
 	autocrlf = input
