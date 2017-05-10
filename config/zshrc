@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # Start gpg-agent, disable ssh-agent
 restart-gpg-agent() {
 	killall gpg-agent
+	export GPG_TTY=$(tty)
 	eval $(gpg-agent --daemon --enable-ssh-support --log-file ~/.gnupg/gpg-agent.log)
 }
 
