@@ -131,3 +131,4 @@ install_tmux_plugin_manager
 symlink_config_files
 configure_iterm
 install_fonts
+customize_macos
