@@ -103,4 +103,15 @@ export-aws-creds() {
 	export AWS_SECRET_ACCESS_KEY=$(pass aws/${1}/access_key_secret)
 }
 
+export-ansible-vault() {
+	mkdir -p ${HOME}/.vaults
+	echo $(pass ansible/${1}) > ${HOME}/.vaults/${1}
+	export ANSIBLE_VAULT_PASSWORD_FILE=${HOME}/.vaults/${1}
+}
+
+clear-ansible-vaults() {
+	rm ${HOME}/.vaults/*
+	unset ANSIBLE_VAULT_PASSWORD_FILE
+}
+
 restart-gpg-agent
