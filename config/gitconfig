@@ -13,10 +13,6 @@ tool = vimdiff
 	st = status -sb
 	unstage = reset HEAD --
 	last = log -1 HEAD
-	squash = rebase -i HEAD~2
-	squaash = rebase -i HEAD~3
-	squaaash = rebase -i HEAD~4
-	squaaaash = rebase -i HEAD~5
 	pt = !git tag -l | xargs git tag -d && git fetch -t
 [user]
 	signingkey = DC679074B4FC95B9
