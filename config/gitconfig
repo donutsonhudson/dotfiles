@@ -21,5 +21,4 @@ tool = vimdiff
 [user]
 	signingkey = DC679074B4FC95B9
 	email = michael.donatz@gmail.com
-[commit]
-	gpgsign = true
+
