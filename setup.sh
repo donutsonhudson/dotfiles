@@ -16,6 +16,7 @@ install_macos_tools() {
 		gpg2 \
 		pass \
 		autojump \
+		editorconfig \
 
     brew cask install \
         iterm2 \
