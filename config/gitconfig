@@ -14,6 +14,7 @@ tool = vimdiff
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	pt = !git tag -l | xargs git tag -d && git fetch -t
+	fixup = commit --fixup
 [user]
 	signingkey = DC679074B4FC95B9
 	email = michael.donatz@gmail.com
