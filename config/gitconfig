@@ -18,3 +18,5 @@ tool = vimdiff
 	signingkey = DC679074B4FC95B9
 	email = michael.donatz@gmail.com
 
+[rebase]
+	autosquash = true
