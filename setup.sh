@@ -121,15 +121,19 @@ install_fonts() {
 	done
 }
 
-if [ $(uname) = "Darwin" ]; then
-    install_macos_tools
-    customize_macos
-fi
+all() {
+	if [ $(uname) = "Darwin" ]; then
+	    install_macos_tools
+	    customize_macos
+	fi
 
-install_vim_plugin_manager
-install_oh_my_zsh
-install_tmux_plugin_manager
-symlink_config_files
-configure_iterm
-install_fonts
-customize_macos
+	install_vim_plugin_manager
+	install_oh_my_zsh
+	install_tmux_plugin_manager
+	symlink_config_files
+	configure_iterm
+	install_fonts
+	customize_macos
+}
+
+$@
