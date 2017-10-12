@@ -41,3 +41,6 @@ endtry
 nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
 " reset not it is <C-l> normally
 nnoremap <space>r <Plug>(unite_restart)
+
+let g:rustfmt_autosave = 1
+
