@@ -44,5 +44,7 @@ nnoremap <space>r <Plug>(unite_restart)
 
 let g:rustfmt_autosave = 1
 
+let g:AutoPairs = {'(':')', '[':']', '{':'}'}
+
 set laststatus=2
 set statusline=%f
