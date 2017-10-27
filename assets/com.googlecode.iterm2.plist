@@ -10,6 +10,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>2FA480BE-BE9F-4BD4-A515-4A8255FD8F81</string>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -58,15 +60,15 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>744 284 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 86 1165 1030 0 0 1920 1177 </string>
+	<string>116 232 1305 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>276 215 1263 962 0 0 1920 1177 </string>
+	<string>276 725 570 452 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>32 249 1732 928 0 0 1920 1177 </string>
+	<string>32 703 570 474 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>817 444 892 639 0 0 1920 1177 </string>
+	<string>17 316 1109 622 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>446 504 1193 673 0 0 1920 1177 </string>
+	<string>446 725 570 452 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>741 401 1186 673 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -844,7 +846,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-10T01:55:49Z</date>
+	<date>2017-10-12T19:22:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>findIgnoreCase_iTerm</key>
