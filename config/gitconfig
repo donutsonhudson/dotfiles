@@ -23,3 +23,5 @@ tool = vimdiff
 	email = michael.donatz@gmail.com
 	name = Michael Donatz
 
+[gitreview]
+	username = donuts
